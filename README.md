@@ -18,3 +18,22 @@
         - Separacion de preocupaciones: Cada componente maneja iferents ipo de 
           datos y logica esto simplifica el trabajo en apps o sitios webs mas 
           complejos.
+# Valores Dinamicos
+    Si se quiere crear un valor dinamico se tiene que crear un const que tenga los valores
+    dentro de un array.
+      EJEMPLO: 
+        const reactDescriptions = ['Fundamental', 'Crucial', 'Core'];
+    Despues crear una funcion que randomize los valores.
+      EJEMPLO: 
+        function getRandomInt(max) {
+          return Math.floor(Math.random() * (max + 1));
+        }
+    Y para llamar el valor random se puede hacer dentro de unas {} y poner  de la siguiente
+    manera: nombredeconst[nombredefuncion(valormaximo de array)] o en un const antes del
+    return de la funcion en la que se usa.
+      EJEMPLO:
+        {reactDescriptions[getRandomInt(2)]} 
+        O
+        const descripcion = reactDescriptions[getRandomInt(2)]; y al llamar {descripcion}
+# Usar Imagenes para que no se piedan en el Deploy
+    
